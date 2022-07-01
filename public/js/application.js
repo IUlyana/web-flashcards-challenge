@@ -1,0 +1,28 @@
+// console.log(document.querySelector('.btn-primary'));
+document.querySelector('.btn-primary').addEventListener('click', async (event) => {
+  event.preventDefault();
+  // const manAnswer = event.target.answer.value;
+  let cardid = Number(event.target.getAttribute('cardid'));
+  cardid += 1;
+  const resNum = String(cardid);
+  // console.log('NA NA SMOTRI----------', resNum);
+  // if (manAnswer == otvet) {
+  //   next();
+  // } else {
+  //   const res = await fetch('/question', {
+  //     method: 'POST',
+  //     body: JSON.stringify({ okAnswer }),
+  //     headers: { 'Content-Type': 'application/json' },
+  //   });
+  // }
+  // переход
+  // })
+  const res = await fetch(`/question/${resNum}`, {
+    method: 'POST',
+    body: JSON.stringify({ resNum }),
+    headers: { 'Content-Type': 'application/json' },
+  });
+  // const cardHtml = await res.json();
+  window.location.href = `/question/${resNum}`;
+  // event.target.closest('.formQuestion').querySelector('.questionChange').innerText = cardHtml.clearQuest
+});
