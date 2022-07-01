@@ -15,7 +15,9 @@ module.exports = function QuestionList({ title, card }) {
           <div className="col-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Enter your guess</label>
             <input type="text" name="answer" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+
             <button cardid={card.id} type="submit" className="btn btn-primary">Submit your guess</button>
+
           </div>
         </div>
       </form>

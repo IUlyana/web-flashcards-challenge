@@ -13,6 +13,7 @@ router.get('/:id', async (req, res) => {
   res.end(html);
 });
 
+
 // router.post('/:id', async (req, res) => {
 //   const questionName = await Card.findOne({ where: { id: req.params.id } });
 //   // console.log(questionName);
@@ -28,5 +29,6 @@ router.get('/:id', async (req, res) => {
 
 //   }
 // });
+
 
 module.exports = router;
