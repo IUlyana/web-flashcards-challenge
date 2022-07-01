@@ -10,4 +10,8 @@ router.get('/', (req, res) => {
   res.end(html);
 });
 
+router.post('/', (req, res) => {
+
+})
+
 module.exports = router;
