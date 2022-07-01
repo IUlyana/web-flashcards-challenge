@@ -8,11 +8,11 @@ module.exports = function QuestionList({ title }) {
       <div>
         Здесь будет вопрос
       </div>
-      <form>
+      <form className="formQuestion" method="post">
         <div className="row">
           <div className="col-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Enter your guess</label>
-            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+            <input type="text" name="answer" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
             <button type="submit" className="btn btn-primary">Submit your guess</button>
           </div>
         </div>
