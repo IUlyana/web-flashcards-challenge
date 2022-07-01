@@ -15,12 +15,12 @@ module.exports = function Layout({ title, children }) {
         <header>
           <nav className="navbar navbar-expand-lg bg-light">
             <div className="container-fluid">
-              <a className="navbar-brand" href="#">Flashcards</a>
+              <a className="navbar-brand" href="/">Flashcards</a>
               <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                   <a className="nav-link active" aria-current="page" href="#">register</a>
                   <a className="nav-link" href="#">login</a>
-                  <a className="nav-link" href="#">home</a>
+                  <a className="nav-link" href="/">home</a>
                 </div>
               </div>
             </div>

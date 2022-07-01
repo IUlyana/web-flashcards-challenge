@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 module.exports = function QuestionList({ title }) {
   return (
     <Layout title={title}>
-      <h1>Nigthawk Trivia</h1>
+      <h1>Здесь будет тема</h1>
       <div>
         Здесь будет вопрос
       </div>
